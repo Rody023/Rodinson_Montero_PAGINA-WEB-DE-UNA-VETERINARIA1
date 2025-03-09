@@ -1,0 +1,63 @@
+:root {
+    --color-primary: #2C3E50;
+    --color-secondary: #18BC9C;
+    --color-accent: #F39C12;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    padding-top: 56px;
+}
+
+.navbar {
+    background-color: var(--color-primary) !important;
+}
+
+#inicio {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 100px 0;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+}
+
+#servicios .card, #equipo .card, #contacto .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#servicios .card:hover, #equipo .card:hover, #contacto .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#equipo .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#contacto .btn-success {
+    background-color: var(--color-accent);
+    border: none;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-accent);
+}
